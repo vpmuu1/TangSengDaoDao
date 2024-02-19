@@ -36,8 +36,4 @@ NAS轻松部署自己的即时通讯—唐僧叨叨，八年时间打造
 该项目需要先在手机端注册才能在web端使用，去官方下载好app登录页面长按“欢迎登录唐僧叨叨”这是一个隐藏的注册入口，点击进入注册页面，输入手机号，默认验证码为：123456即可 (不用点获取验证吗)
 服务器输入
 
-登录之后就能看到主界面了，说实话和微信不能说一模一样，简直就是双胞胎啊。上几个图给大家看看。
-演示图演示图
-总结
-
-更多的功能就需要小伙伴们自行去了解了，对于即时通讯这一类，熊猫并不是很感冒。毕竟自己搭建并没有觉得有什么不同，所以还是直接用微信吧。
+curl -H "package: com.xinbida.tangsengdaodao" -H "os: Android" -H "appid: wukongchat" -H "model: 22041216C" -H "version: 1.0" -H "Content-Type: application/json; charset=UTF-8" -H "User-Agent: okhttp/5.0.0-alpha.2" -X POST -d '{"password":"111111","code":"123456","zone":"0086","phone":"1111","name":"","device":{"device_name":"Redmi 22041216C","device_id":"c31c6422135548ab","device_model":"22041216C"}}'  "http://122.116.7.197:8090/v1/user/register"
